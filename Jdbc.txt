@@ -1,0 +1,15 @@
+// Jdbc is stands for Java Database Connectivity . it is a standard API provided By Oracele for java applications to interact with different set
+of databases.
+// API (is the set of predefine class and interfaces)
+
+
+// steps the to establish the connection 
+
+1 import the package (java.sql.*) 
+2 load                (com.mysql.jdbc.Driver)
+ & register the driver      class.forName("com.mysql.jdbc.Driver")
+3 establish the connection
+4 create the statement 
+5 exevute the query 
+6 process the result
+7 close
