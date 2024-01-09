@@ -57,7 +57,7 @@ password=Abhi@321
 
 // for statement JDBCUtil
 
-public class JDBCUtil {
+public class JDBCUtil {//
 	public static Connection getJdbcConnection() throws Exception {
 
 
