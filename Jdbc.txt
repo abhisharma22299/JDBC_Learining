@@ -50,4 +50,77 @@ Larry Ellison
 create a java project after the add the jar 
 step 1 right click on your project after click on java bulid path and select the Library option click on the user libraray 
 
+// Application.properties
+url= jdbc:mysql:///Studentinfo
+user=root
+password=Abhi@321
+
+// for statement JDBCUtil
+
+public class JDBCUtil {
+	public static Connection getJdbcConnection() throws Exception {
+
+
+FileInputStream FIS=new FileInputStream();
+Properties p=new Properties();
+p.load(FIS);
+
+// get Url , Password , User From Application.properties file
+String url=p.getProperties("url");
+String user=p.getProperties("user");
+String password=p.getProperties("password");
+
+System.out.println(url);
+System.out.println(user);
+System.out.println(password);
+
+Connection connection = DriverManager.getConnection(url,user,password);
+
+return connection;	
+
+}
+public static void closeResources(Connection connection ,Statement statement){
+if(connection!=null){connection.close;}
+if(statement!=null){statement.close;}
+
+}
+}
+
+// InsertMySqlQuery
+
+public class InsertMySQLQuery {
+	public static void main(String args []) throws Exception {
+Connection connection=null;
+Satement statement=null;
+
+try{
+connection=JDBCUtil.getJdbcConnection();
+if(connection!=null){
+statement=connection.createStatement();
+String myinsertquery="insert into student(name,rollnumber,result)values('Raman ',2,'Pass')";
+int roweffected=satatement.executeUpdate(myinsertquery);
+}
+if(roweffected>=1){
+System.ot.println("Row Inserted");
+
+}
+else{
+System.out.println("Row Not Inserted");
+}
+
+
+}catch(Exception e){
+e.printStackTrace();
+}
+finally{
+JDBCUtil.closeResources(connection,statement);
+}
+
+	}
+}
+
+// 
+
+
+
 
