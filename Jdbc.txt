@@ -1,15 +1,53 @@
 // Jdbc is stands for Java Database Connectivity . it is a standard API provided By Oracele for java applications to interact with different set
 of databases.
 // API (is the set of predefine class and interfaces)
-
-
+//
+//
 // steps the to establish the connection 
 
 1 import the package (java.sql.*) 
 2 load                (com.mysql.jdbc.Driver)
  & register the driver      class.forName("com.mysql.jdbc.Driver")
-3 establish the connection
-4 create the statement 
+3 establish the connection create the boj of connections
+4 create the statement  (statement,prepared statement,collable statement) 
 5 exevute the query 
 6 process the result
 7 close
+
+// syntax 
+ 
+
+import java.sql.*;
+main(){
+class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection("URL","UN","DataBase Name ");
+Statement st =con.createStatement();
+ResultSet rs= st.executeQuery("select * from Student ");
+// rs.next();
+// rs.getInt(1)+" "+ rs.getString();
+while(rs.next()){
+rs.next();
+rs.getInt(1)+" "+ rs.getString();
+}
+
+st.close();
+con.close();
+}
+
+// for sql
+
+DDL create the structre of the table
+DML data manipulation  insert or data from the data base executeUpdate()
+DQL to get data from the data base executeQuery()	
+
+// how is the founder of oracel
+Larry Ellison
+
+
+// steps in eclipes 
+
+// download the mysql connector jar file 
+create a java project after the add the jar 
+step 1 right click on your project after click on java bulid path and select the Library option click on the user libraray 
+
+
