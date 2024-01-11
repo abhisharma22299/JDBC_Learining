@@ -27,12 +27,51 @@ undeploy  - destory () call
 
      Destory 
 
-javap jakarta.servlet.Servlet : there is 5 abstract method in jakarta 
-
-if we want to create our own Servlet class then you have to implement all the abstact method present in the servlet class  
- 
-
 // installation part to set the path of apache tomcat
 
 set path=C:\Program Files\Java\jdk-21\bin
 set classpath="%classpath%",;C:\Program Files\Apache Software Foundation\Tomcat 10.1\lib\servlet-api.jar;
+
+javap jakarta.servlet.Servlet : there is 5 abstract method in jakarta 
+javap jakarta.servlet.GenricServlet
+
+if we want to create your own Servlet class then you have to implement all the abstact method present in the servlet class  
+public interface jakarta.servlet.Servlet {
+  public abstract void init(jakarta.servlet.ServletConfig) throws jakarta.servlet.ServletException;
+  public abstract jakarta.servlet.ServletConfig getServletConfig();
+  public abstract void service(jakarta.servlet.ServletRequest, jakarta.servlet.ServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  public abstract java.lang.String getServletInfo();
+  public abstract void destroy();
+}
+javap jakarta.servlet.GenricServlet
+in Servelt there is easy method to create a servlet class - GenricServlet for this there is interface Servlet and its import is import jakarta.servlet.GenricServlet  
+  public jakarta.servlet.GenericServlet();
+  public void destroy();
+  public java.lang.String getInitParameter(java.lang.String);
+  public java.util.Enumeration<java.lang.String> getInitParameterNames();
+  public jakarta.servlet.ServletConfig getServletConfig();
+  public jakarta.servlet.ServletContext getServletContext();
+  public java.lang.String getServletInfo();
+  public void init(jakarta.servlet.ServletConfig) throws jakarta.servlet.ServletException;
+  public void init() throws jakarta.servlet.ServletException;
+  public void log(java.lang.String);
+  public void log(java.lang.String, java.lang.Throwable);
+  public abstract void service(jakarta.servlet.ServletRequest, jakarta.servlet.ServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  public java.lang.String getServletName();
+}
+
+in the genericservlet destroy method has given body and init() also only service method is abstract but in normal servlet there is all abstract method init, services ,and destory , there 5 abstract method and you have to mandatry to implemet all the abstract method that are present the abstract class 
+
+but in GenricServlet you have to only one method to implement services() method 
+
+
+so for more comfort there one more class is HTTPServlet and there is no abstract mehthod   in this 
+
+Servlet -Interface(5 abstract method )
+
+GenericServlet -abstract class (1 abstract method )
+
+HTTPServlet-Interface(5 abstract method ) javap jakarta.servlet.HttpServlet
+
+
+
