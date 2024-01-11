@@ -1,0 +1,29 @@
+                  Web applicatoin
+                        Types 
+static  it already prepare , when the static page run then its code comes on the web page 
+dynamic it prepare at the run time , when the dynamic page run then its responese only come 
+
+
+Servlet Is a specfication to build dynamic web Apps using Java
+
+CGI(Common Gateway Interface) : use for backend programming in c, c++,purl : it create diffrent process for same task
+
+Servlet is work on (request - response mechanism ) 
+
+computer - apache tomcat (web server) - web container - Small servlet 
+
+delpoy website - init() call
+req 1  - services() call
+req 2  - services() call
+req 3  - services() call
+req 4  - services() call
+req 5  - services() call
+undeploy  - destory () call
+ Servlet Life Cycle
+
+      Init 
+ 
+     Services
+
+     Destory //
+
