@@ -107,6 +107,11 @@ Rootfolder (Project Name )
          .class 
      
       Static(Staitc content file like html css javascript)
+      
+      lib (jar(Java Archived) files)  
      
      Web.xml(Deployment Discripter-in this file there procedure of deployment of application of server) 
        
+//war(Web Archived) -when you deploy the your servlet applicatio on server then file that was deploy on server is war file -  it constract of  all web-info file ,lib ,web.xml
+
+// In core java there is main function but in servet there is no main class , all the classes in servlet it call by web container (web container does not no about the main function it only know about the init services and destory)
