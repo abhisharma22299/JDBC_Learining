@@ -71,7 +71,42 @@ Servlet -Interface(5 abstract method )
 
 GenericServlet -abstract class (1 abstract method )
 
-HTTPServlet-Interface(5 abstract method ) javap jakarta.servlet.HttpServlet
+HTTPServlet-Interface(5 abstract method ) javap jakarta.servlet.http.HttpServlet
+public abstract class jakarta.servlet.http.HttpServlet extends jakarta.servlet.GenericServlet {
+  public static final java.lang.String LEGACY_DO_HEAD;
+  public jakarta.servlet.http.HttpServlet();
+  public void init(jakarta.servlet.ServletConfig) throws jakarta.servlet.ServletException;
+  protected void doGet(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected long getLastModified(jakarta.servlet.http.HttpServletRequest);
+  protected void doHead(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected void doPost(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected void doPut(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected void doDelete(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected void doOptions(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected void doTrace(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  protected void service(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  public void service(jakarta.servlet.ServletRequest, jakarta.servlet.ServletResponse) throws jakarta.servlet.ServletException, java.io.IOException;
+  static {};
+}
 
 
+file structure of a Servlet Apllication 
 
+Rootfolder (Project Name )
+  Sourcefoler -
+        .java 
+        .java
+        .java
+        .java
+  WEB-INF 
+     class 
+         .class 
+         .class 
+         .class 
+         .class 
+         .class 
+     
+      Static(Staitc content file like html css javascript)
+     
+     Web.xml(Deployment Discripter-in this file there procedure of deployment of application of server) 
+       
