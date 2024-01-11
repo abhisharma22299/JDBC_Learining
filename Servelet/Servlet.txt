@@ -115,3 +115,29 @@ Rootfolder (Project Name )
 //war(Web Archived) -when you deploy the your servlet applicatio on server then file that was deploy on server is war file -  it constract of  all web-info file ,lib ,web.xml
 
 // In core java there is main function but in servet there is no main class , all the classes in servlet it call by web container (web container does not no about the main function it only know about the init services and destory)
+
+javap jakarta.servlet.ServletResponse
+Compiled from "ServletResponse.java"
+public interface jakarta.servlet.ServletResponse {
+  public abstract java.lang.String getCharacterEncoding();
+  public abstract java.lang.String getContentType();
+  public abstract jakarta.servlet.ServletOutputStream getOutputStream() throws java.io.IOException; // forStrings output 
+  public abstract java.io.PrintWriter getWriter() throws java.io.IOException; // for characters
+  public abstract void setCharacterEncoding(java.lang.String);
+  public abstract void setContentLength(int);
+  public abstract void setContentLengthLong(long);
+  public abstract void setContentType(java.lang.String);
+  public abstract void setBufferSize(int);
+  public abstract int getBufferSize();
+  public abstract void flushBuffer() throws java.io.IOException;
+  public abstract void resetBuffer();
+  public abstract boolean isCommitted();
+  public abstract void reset();
+  public abstract void setLocale(java.util.Locale);
+  public abstract java.util.Locale getLocale();
+}
+
+// FOR COMPILE javac firstServlet.java
+// for create war file - FirstServletApp>jar cvf firstProject.war .
+C:\Program Files\Apache Software Foundation\Tomcat 10.1\lib --open tomcat 10
+// open localhost:8082 - manage app-deploy war file option -select War file from your project 
