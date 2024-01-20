@@ -141,3 +141,55 @@ public interface jakarta.servlet.ServletResponse {
 // for create war file - FirstServletApp>jar cvf firstProject.war .
 C:\Program Files\Apache Software Foundation\Tomcat 10.1\lib --open tomcat 10
 // open localhost:8082 - manage app-deploy war file option -select War file from your project 
+
+
+// to configure in the net benas we have follow these steps 
+1  go on windows option -> services -> server -> right click add server -> enter the admin and password -> select the file of apache tom cat option in program files -> finish 
+
+// to create a new project for servlet in net beans 
+-> file menu -> new project ->  java anti -> java web -> slect the web application -> next -> next ->finsih 
+
+
+// to configure in the appache tomcat eclipe we have follow these steps 
+  go on windows option -> show view-> services -> at terminal create server click it  -> right click add server -> apache ->apache 10.1->next->select the file of apache tom cat option in program files -> finish 
+
+there is a differnece in topcat 9 and tomcat 10
+-> topcat9
+Release notes - Known issues in this Apache Tomcat release.
+Apache Tomcat Server Configuration Reference - Reference manual that documents all available elements and attributes that may be placed into the Apache Tomcat conf/server.xml file.
+JK Documentation - Complete documentation and HOWTOs on the JK native webserver connector, used to interface Apache Tomcat with servers like Apache HTTPd, IIS and others.
+Servlet 4.0 Specification and Javadoc
+JSP 2.3 Specification and Javadoc
+EL 3.0 Specification and Javadoc
+WebSocket 1.1 Specification and Javadoc
+JASPIC 1.1 Specification and Javadoc
+->topcat10
+Release notes - Known issues in this Apache Tomcat release.
+Apache Tomcat Server Configuration Reference - Reference manual that documents all available elements and attributes that may be placed into the Apache Tomcat conf/server.xml file.
+JK Documentation - Complete documentation and HOWTOs on the JK native webserver connector, used to interface Apache Tomcat with servers like Apache HTTPd, IIS and others.
+Servlet 6.0 Specification and Javadoc
+JSP 3.1 Specification and Javadoc
+EL 5.0 Specification and Javadoc
+WebSocket 2.1 Specification and Javadoc
+Authentication 2.0 Specification and Javadoc
+
+// to create web application 
+-> right click on the project section -> dynamic application -> give name -> next -> next -> finish 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
