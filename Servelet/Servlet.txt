@@ -182,9 +182,8 @@ Authentication 2.0 Specification and Javadoc
 ->when user does not specify the which wep is needed as a responnse then there is a by default page index.html ,welcome file list is used to change default setting of giving response index.jsp
 // request dispacher
 
--> When we need to shift one servlet to another then we use servlet dispatcher
-
-
+-> 1 work  When we need to forward one resourse to another servlet then we use servlet dispatcher
+-> 2 work it can also include the another servlet respone into it.
 
 
 
