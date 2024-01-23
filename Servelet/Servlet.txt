@@ -1,3 +1,5 @@
+attrib -h -r -s
+
                    Web applicatoin
                         Types 
 static  it already prepare , when the static page run then its code comes on the web page 

@@ -3,6 +3,8 @@ package com.Servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -10,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class Register extends HttpServlet {
 
 	
-		public void doPost(HttpServletRequest sq,HttpServletResponse sr) throws IOException{
+		public void doPost(HttpServletRequest sq,HttpServletResponse sr) throws IOException, ServletException{
 			sr.setContentType("text/html");
 	        PrintWriter pw=sr.getWriter();
 	        pw.println("<h1>Welcome to register page</h1>");
@@ -25,6 +27,9 @@ public class Register extends HttpServlet {
 	      pw.println("<h1>gender    : "+gender +" </h1>");
 	      pw.println("<h1>course    : "+course +"</h1>");
 	      
+	      // Request dispatcher
+	      RequestDispatcher rd=sq.getRequestDispatcher("index.jsp");
+	      rd.include(sq, sr);
 		 
 		}
 	
