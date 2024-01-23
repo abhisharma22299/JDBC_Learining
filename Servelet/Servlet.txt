@@ -1,4 +1,4 @@
-                  Web applicatoin
+                   Web applicatoin
                         Types 
 static  it already prepare , when the static page run then its code comes on the web page 
 dynamic it prepare at the run time , when the dynamic page run then its responese only come 
@@ -178,6 +178,8 @@ Authentication 2.0 Specification and Javadoc
 
 
 //Welcome file list and Request dispatcher
+
+when user does not specify the which wep is needed as a responnse then there is a by default page index.html ,welcome file list is used to change default setting of giving response index.jsp
 
 
 
