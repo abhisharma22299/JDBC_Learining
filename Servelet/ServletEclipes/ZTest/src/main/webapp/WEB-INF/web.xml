@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" 
+id="WebApp_ID" version="6.0">
+<!--  Servlet declaration -->
+<display-name>ZTest</display-name>
+
+<servlet>
+
+<servlet-name>first</servlet-name>
+<servlet-class>com.Servlets.FirstServlet</servlet-class>
+</servlet>
+
+
+<!--   mapping -->
+<servlet-mapping>
+<servlet-name>first</servlet-name>
+<url-pattern>/web</url-pattern>
+</servlet-mapping>
+<!--Second  Servlet declaration -->
+<servlet>
+
+<servlet-name>Second</servlet-name>
+<servlet-class>com.Servlets.SecondServlet</servlet-class>
+</servlet>
+
+
+<!-- Second  mapping -->
+<servlet-mapping>
+<servlet-name>Second</servlet-name>
+<url-pattern>/secondweb</url-pattern>
+</servlet-mapping>
+
+<!--Third Servlet declaration -->
+<servlet>
+<servlet-name>third</servlet-name>
+<servlet-class>com.Servlets.ThirdServlet</servlet-class>
+</servlet>
+<!-- Third  mapping -->
+<servlet-mapping>
+<servlet-name>third</servlet-name>
+<url-pattern>/thirdweb</url-pattern>
+</servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>

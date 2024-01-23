@@ -13,5 +13,8 @@
 
 <h1></h1>
 <%= new Date().toLocaleString()  %>
+<br>
+<a href="login">	LoginServlet
+</a>
 </body>
 </html>
