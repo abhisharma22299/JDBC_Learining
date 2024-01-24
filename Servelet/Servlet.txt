@@ -187,6 +187,18 @@ Authentication 2.0 Specification and Javadoc
 -> 1 work  When we need to forward one resourse to another servlet then we use servlet dispatcher
 -> 2 work it can also include the another servlet respone into it.
 
+// parameters and attributes in servlets
+
+-> parameters :- there information is given from the user is known as parameters.//These are those values which are provided by user to any servlet to process the request during the request operation.
+                 -> Servlet only read that value for request processing 
+                 ->Parameter mostly Data send using form ,initalized parameters etc.
+                 ->How to get initalized parameter String name=request.getParameter("name_of_your_parameter"); Now process your request 
+
+-> Attributes :- there are the objects that are attched by one Servlet to object(Session ,request ,config etc)and other servlet can fetch that object to process to logic.
+                 -> Servlet can easily modify , add ,and remove the content of attribute when required
+                 ->How to perform operation with attrutes
+                 ->setAttribute(String name, Object value),Object value=getAttribute(String name),removeAttribute(String name);
+
 
 
 
