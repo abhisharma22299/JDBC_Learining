@@ -2,7 +2,7 @@
 of databases.
 // API (is the set of predefine class and interfaces)
 //
-//
+////
 // steps the to establish the connection 
 
 1 import the package (java.sql.*) 
