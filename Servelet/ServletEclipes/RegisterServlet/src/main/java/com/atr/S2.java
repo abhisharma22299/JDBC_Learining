@@ -10,15 +10,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Servlet implementation class S1
+ * Servlet implementation class S2
  */
-public class S1 extends HttpServlet {
+public class S2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public S1() {
+	public S2() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -33,22 +33,21 @@ public class S1 extends HttpServlet {
 			out.println("<tittle>Servlet S1</tittle>");
 			out.println("</head>");
 			out.println("<body>");
+			int nn1 = Integer.parseInt(request.getParameter("n1"));
 
-			String n1 = request.getParameter("n1");
-			String n2 = request.getParameter("n2");
-			int nn1 = Integer.parseInt(n1);
-			int nn2 = Integer.parseInt(n2);
-			int sum = nn1 + nn2;
+			int nn2 = Integer.parseInt(request.getParameter("n2"));
+	
+			int s1 = nn1 * nn2;
+// get attributes 
+			int sum=(int)request.getAttribute("sum");
 			
-			// attributes ...
-			
-			request.setAttribute("sum", sum);
-			// request ...request dispatcher
-			RequestDispatcher rd=request.getRequestDispatcher("S2");
-			rd.forward(request, response);
+			out.println("<h1>");
+
+out.println("Sum = " + sum);
+out.println("Product = "+ s1);
+out.println("</h1>");
 			out.println("</body>");
 			out.println("</html>");
-			
 
 		}
 	}

@@ -12,7 +12,7 @@
 
 
 
-<form>
+<form action="S1">
 N1:	<input type="number" name="n1"> </input>
 </br>
 N2:	<input type="number" name="n2"> </input>
