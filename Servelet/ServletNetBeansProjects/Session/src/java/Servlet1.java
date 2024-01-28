@@ -5,10 +5,10 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
@@ -36,23 +36,15 @@ public class Servlet1 extends HttpServlet {
             out.println("<title>Servlet Servlet1</title>");            
             out.println("</head>");
             out.println("<body>");
-           
+            out.println("<hello world>");
+            String name=request.getParameter("name");
+            out.println("<h1>Servlet Servlet1 at " +name+ "</h1>");
+            out.println("<h1><a href='Servlet2'> go to servlet2</a> </h1>");
             out.println("</body>");
             out.println("</html>");
         }
     }
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-	}
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

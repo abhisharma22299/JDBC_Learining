@@ -205,7 +205,7 @@ Authentication 2.0 Specification and Javadoc
     State less - when you create server then any request send by the client is new request then we need to know th
                   ex- r1 request send to client 1 then after client 1 send r2 request then the each request send by the same clinent ,server know as this is a first request this problem is known as state management problem 
 Session Tracking techniques in servlet 
-1 cookies 
+1 cookies When any brower or client send the request to browser and server response to the request then server send some cokiess in the addition of the response ,then cokkeies save to the browser  
 2 Hidden Form Field
 3 Url Rewrting 
 4 HttpSession

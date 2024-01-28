@@ -5,10 +5,10 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
@@ -36,7 +36,9 @@ public class Servlet2 extends HttpServlet {
             out.println("<title>Servlet Servlet2</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Servlet2 at " + request.getContextPath() + "</h1>");
+            out.println("<hello world>");
+            String name=request.getParameter("name");
+            out.println("<h1>Servlet Servlet2 at " +name+ " Welcome Back ........</h1>");
             out.println("</body>");
             out.println("</html>");
         }
