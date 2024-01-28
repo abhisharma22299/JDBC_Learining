@@ -200,6 +200,10 @@ Authentication 2.0 Specification and Javadoc
                  ->setAttribute(String name, Object value),Object value=getAttribute(String name),removeAttribute(String name);
 
 // Session Tracking In Servlet
+-> Session Tracking is a way to maintain state(data) of an user
+-> It is also known as State Management 
+    State less - when you create server then any request send by the client is new request then we need to know th
+                  ex- r1 request send to client 1 then after client 1 send r2 request then the each request send by the same clinent ,server know as this is a first request this problem is known as state management problem 
 
 
 
