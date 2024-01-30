@@ -213,7 +213,9 @@ Session Tracking techniques in servlet
 
 // url rewriting using servlet
 -> Url rewriting is a process of appending or modifying any url structure whichle loading a page. adding extra information to the url 
-      appening name to the servlet//
+      appening name to the servlet// <a href='servlet2?user="+ name+"'>Got to second servlet </a> it also uses to mantain the state of the servlet
+
+// Hidden Form fields 
 
 
 
