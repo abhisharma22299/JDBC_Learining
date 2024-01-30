@@ -6,10 +6,11 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
+    import javax.servlet.http;
 /**
  *
  * @author Abhishek Sharma
@@ -40,6 +41,10 @@ public class Servlet1 extends HttpServlet {
             String name=request.getParameter("name");
             out.println("<h1>Servlet Servlet1 at " +name+ "</h1>");
             out.println("<h1><a href='Servlet2'> go to servlet2</a> </h1>");
+          // create a cookie javax.http
+            Cookie c=new Cookie("User_Name",name);
+          response.addCookie(c);
+            
             out.println("</body>");
             out.println("</html>");
         }

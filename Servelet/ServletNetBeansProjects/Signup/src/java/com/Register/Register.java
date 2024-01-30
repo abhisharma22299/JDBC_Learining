@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
+package com.Register;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
+import java.sql.*;
 /**
  *
  * @author Abhishek Sharma
  */
-public class Servlet2 extends HttpServlet {
+public class Register extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,36 +34,45 @@ public class Servlet2 extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Servlet2</title>");            
+            out.println("<title>Servlet Register</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<hello world>");
-            // getting all the cookies
             
-            Cookie cookies[]= request.getCookies();
-            boolean f=false;
-            String name="";
-                if(cookies==null){
-                    out.println("<h1>Your are new user</h1>")   ;
-                    return;
-                }
-                else{
-                    for(Cookie c:cookies){
-                        String temp=c.getName();
-                    if(temp.equals("User_Name")){
-                        f=true;
-                        name=c.getValue();
-                    }
-                    }
-                }
-                
-       if(f){
-            out.println("<h1>Servlet Servlet2 at " +name+ " Welcome Back ........</h1>");
+            String name=request.getParameter("user_name");
+            String password=request.getParameter("user_password");
+            String email=request.getParameter("user_email");
             
-       }
-        out.println("<h1>Thanku</h1>");
             
-           out.println("</body>");
+            out.println("<h1>Servlet Register at " + name + "</h1>");
+             out.println("<h1>Servlet Register at " + password + "</h1>");
+             out.println("<h1>Servlet Register at " + email + "</h1>");
+             
+             
+             // connection for JDBC
+             
+             // query...
+             try{
+                 out.println("forname");
+                 Class.forName("com.mysql.jdbc.Driver");
+                 out.println("manager");
+                 Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","Abhi@321");
+             out.println("query");
+                    String q="insert into persons(FirtName,Email,Password) values(?,?,?)";
+PreparedStatement pstm=con.prepareStatement(q);
+            out.println("set");
+             pstm.setString(1,name);
+             pstm.setString(2,email);
+             pstm.setString(3,password);
+             
+             pstm.executeUpdate();
+             out.println("done");
+             out.println("Done...........");
+             }catch(Exception e){
+                 e.printStackTrace();
+out.println("error");
+             
+             }
+             out.println("</body>");
             out.println("</html>");
         }
     }
