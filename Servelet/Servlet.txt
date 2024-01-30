@@ -217,7 +217,13 @@ Session Tracking techniques in servlet
 
 // Hidden Form fields Hidden form field a hidden (invisible ) textfield is used for maintaining the state of an user 
        <input type="hidden"name="user_name" value="Durgesh Tiwari" />
+eg <form action='servlet2'>
+    <input type='hidden' name='user_name' value='"+name+"' />
+    <button>Go to secnd Servlet</button>
 
+     </form>
+
+// Session Tracking using HttpSession
 
 
 
