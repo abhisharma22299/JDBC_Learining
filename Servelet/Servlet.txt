@@ -224,6 +224,9 @@ eg <form action='servlet2'>
      </form>
 
 // Session Tracking using HttpSession
+-> Session simply means small interval of time 
+-> used for state management
+
 
 
 
