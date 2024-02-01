@@ -42,7 +42,7 @@ public class S2 extends HttpServlet {
 			int sum=(int)request.getAttribute("sum");
 			
 			out.println("<h1>");
-
+			
 out.println("Sum = " + sum);
 out.println("Product = "+ s1);
 out.println("</h1>");
