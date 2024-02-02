@@ -1,6 +1,6 @@
 // thers is many drow back of using jsp
  -> when any brower send request to the servlet then the servlet page need to send the response as html. broser did not understand the java or other programing language 
       ,thats why we have to write the in our servlet in complex page we need to write hole the code in our servlet page.
--> JSP is the solution of this problem , we need to create html.jsp  ,
+-> JSP is the solution of this problem , we need to create html.jsp  , java code also wirte in the jsp code
 
 -> JSP is the extension of Servlet Technology but jsp provides more functionality than servlet	
