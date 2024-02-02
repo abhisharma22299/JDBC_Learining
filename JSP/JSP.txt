@@ -11,3 +11,11 @@
 example 	<% =new Date(). %>, jsp provides us to write code on the forms of tags
  JSP also provide some library JSTL(JSP Standered Tag Library) , custom tags 
 // Comanly used tags in the JSP
+->Declration tags in  JSP
+<%!
+
+
+variable;
+method;
+
+ %>
