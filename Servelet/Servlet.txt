@@ -226,6 +226,35 @@ eg <form action='servlet2'>
 // Session Tracking using HttpSession
 -> Session simply means small interval of time 
 -> used for state management
+-> When HttpSession expired -> Browser close -> user  invlidate -> time expired 
+
+javax.servlet.httpsession 
+it have setAttribute(key,value)/ key is always a string and value is can be passed object ,or any other value 
+        getAttibute("key");it will return the object   
+        getId();this method is to know that session is new or old
+        removeAttribute(key); // to remove all the attribute 
+        invalidate();// to expire the session 
+
+HttpSession s =req.getSession();true||false true for newuser and false for to check the old user in the session. manyly we pass blank 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

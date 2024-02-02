@@ -36,16 +36,16 @@ public class S2 extends HttpServlet {
 			int nn1 = Integer.parseInt(request.getParameter("n1"));
 
 			int nn2 = Integer.parseInt(request.getParameter("n2"));
-	
+
 			int s1 = nn1 * nn2;
-// get attributes 
-			int sum=(int)request.getAttribute("sum");
-			
+           // get attributes 
+			int sum = (int) request.getAttribute("sum");
+
 			out.println("<h1>");
-			
-out.println("Sum = " + sum);
-out.println("Product = "+ s1);
-out.println("</h1>");
+
+			out.println("Sum = " + sum);
+			out.println("Product = " + s1);
+			out.println("</h1>");
 			out.println("</body>");
 			out.println("</html>");
 
@@ -59,7 +59,7 @@ out.println("</h1>");
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		processRequest( request,  response);
+		processRequest(request, response);
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 

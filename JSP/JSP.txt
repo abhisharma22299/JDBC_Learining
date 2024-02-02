@@ -1,0 +1,3 @@
+// thers is many drow back of using jsp
+ -> when any brower send request to the servlet then the servlet page need to send the response as html. 
+JSP is the extension of Servlet Technology but jsp provides more functionality than servlet	
