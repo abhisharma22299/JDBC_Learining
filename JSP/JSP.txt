@@ -6,6 +6,6 @@
 
 -> disadvantages of JSP
    static content are genrated by java(dynamic content) from inside servlet. Designing in servlet is difficult 
-   when we write our static content in our dynamic content 
+   when we write our static content in our dynamic content , any change in our static content the we have to recompiler and redeploy  our code  then changes will show 
 -> JSP is the extension of Servlet Technology but jsp provides more functionality than servlet	
 example 	<% =new Date(). %>
