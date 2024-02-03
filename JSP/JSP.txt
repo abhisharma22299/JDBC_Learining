@@ -12,10 +12,63 @@ example 	<% =new Date(). %>, jsp provides us to write code on the forms of tags
  JSP also provide some library JSTL(JSP Standered Tag Library) , custom tags 
 // Comanly used tags in the JSP
 ->Declration tags in  JSP
+
 <%!
-
-
 variable;
 method;
+%>	
 
- %>
+-> Scriptlet tags in  JSP
+
+<%
+
+out.println("as");
+
+%>
+-> Expresssion  tags in  JSP
+
+<%=
+out.println("as");
+%>
+
+-> Discriptive 	 tags in  JSP
+
+<%@page import="java.util.ArrayList, java.util.Random" 	%>
+
+->  include 
+<%@include file=header.jsp	%	>
+
+
+// JSTL (JSP Standard Library)
+core-out,foreach,if
+sql
+formating
+
+-> taglib directive // for to use this you need to Add jars in the in your Library
+add jar og taglib directive
+//  <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+  <c:set var="name" value="Abhishek_Sharma" ></c:set>
+        <c:out value="${name}"></c:out>
+	
+
+
+
+// Custom Tags 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
