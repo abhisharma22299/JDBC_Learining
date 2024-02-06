@@ -55,7 +55,9 @@ add jar og taglib directive
 
 // Custom Tags 
 -> Why custom tag is required	
-to use this there is TagSupport handler interface just you need to implement it and override its methord
+to use this there is 	TagSupport handler interface just you need to implement it and override its methord
+// implicit object in jsp 
+-> is that object that 
 
 
 
