@@ -70,8 +70,10 @@ response.sendRedirected("https://www.techsoftindia.co.in");
 %>
 
 // Concepts of filters in java servlet
+ it is based on clinent request and response it  comes before the servet start for filtering the data , which filters the data that are in correct form or not ,it workers on both side before data 
+map into database and after the database.
 
-as
+
 
 
 
