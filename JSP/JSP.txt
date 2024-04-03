@@ -72,6 +72,15 @@ response.sendRedirected("https://www.techsoftindia.co.in");
 // Concepts of filters in java servlet
  it is based on clinent request and response it  comes before the servet start for filtering the data , which filters the data that are in correct form or not ,it workers on both side before data 
 map into database and after the database.
+we can use server side validatioin in our servelt but we can using the filter for one time work on filter and put it multiple servlet.
+
+-> in filter api there multiple interface 
+
+   filter -> init(),doFilter(),destory();
+
+          
+   filterchain  request forward
+   filterconfig  get data from web.xml and others form
 
 
 
