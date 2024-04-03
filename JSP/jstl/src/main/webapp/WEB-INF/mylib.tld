@@ -3,7 +3,6 @@
   <tlib-version>1.0</tlib-version>
   <short-name>mylib</short-name>
   <uri>/WEB-INF/mylib</uri>
-
 <tag>
 <name>mytag</name>
 <tag-class>Tags.TagHandler</tag-class>

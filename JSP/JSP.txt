@@ -57,7 +57,24 @@ add jar og taglib directive
 -> Why custom tag is required	
 to use this there is 	TagSupport handler interface just you need to implement it and override its methord
 // implicit object in jsp 
--> is that object that 
+-> is that object that out.println(); is defined in the jsp , request.getParameter();,response.sendRedirect();,config(ServletConfig);,application(ServletContext);, session.isNew();
+
+
+// Redirection in jsp/ How to redirect in jsp?
+Create page1.jsp create link on the <a href="page2.jsp"> Go to page2</a>
+at page 2 write 
+<h1>page2<h2>
+<%
+	response.sendRedirected("page3.jsp");
+response.sendRedirected("https://www.techsoftindia.co.in");
+%>
+
+// Concepts of filters in java servlet
+
+as
+
+
+
 
 
 
