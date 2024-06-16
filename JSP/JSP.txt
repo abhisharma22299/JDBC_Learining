@@ -83,24 +83,12 @@ we can use server side validatioin in our servelt but we can using the filter fo
    filterconfig  get data from web.xml and others form
 
 
+-> JSTL (JSP standard tag library )
+The JSTL is collection of predefined tags to simply the jsp development .
 
+->advantage 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Fast devlopment JSTL provides many tags that simplify the jsp
+code resuseablity we can use the JSTL tags on various pages
+No need to use scriptlet tag it avoids the use of scroptlet tag
 	
